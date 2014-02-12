@@ -1,3 +1,44 @@
+x11proto-scrnsaver (1.2.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Install scrnsaverproto.pc to /usr/share/pkgconfig.
+  * Pass --docdir directly to configure.ac, adjust doc install for new
+    release.
+  * Don't require (fake)root for debian/rules clean.
+  * Bump build-deps on xutils-dev, xmlto and xorg-sgml-doctools per
+    configure.ac.
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 15 Apr 2012 17:57:57 +0200
+
+x11proto-scrnsaver (1.2.1-2) unstable; urgency=low
+
+  * Mark x11proto-scrnsaver-dev Multi-Arch: foreign
+
+ -- Steve Langasek <vorlon@debian.org>  Tue, 15 Nov 2011 11:49:19 -0800
+
+x11proto-scrnsaver (1.2.1-1) unstable; urgency=low
+
+  [ Julien Cristau ]
+  * Rename the build directory to not include DEB_BUILD_GNU_TYPE for no
+    good reason.  Thanks, Colin Watson!
+  * Remove myself from Uploaders
+
+  [ Robert Hooker ]
+  * New upstream release.
+
+  [ Cyril Brulebois ]
+  * Add pkg-config build-dep.
+  * Add xmlto, xorg-sgml-doctools, and w3m build-dep for the specs.
+  * Bump xutils-dev build-dep for new macros.
+  * Pass --with-xmlto and --without-fop, we want html and txt only.
+  * Kill *.xml in the doc directory, no point in shipping them.
+  * Ship *.html, *.css, and *.txt from the doc directory.
+  * Switch from --list-missing to --fail-missing for additional safety.
+  * No longer pass --disable-shared, this option is gone.
+  * Add myself to Uploaders.
+
+ -- Cyril Brulebois <kibi@debian.org>  Wed, 03 Nov 2010 22:44:49 +0100
+
 x11proto-scrnsaver (1.2.0-2) unstable; urgency=low
 
   * Upload to unstable.
